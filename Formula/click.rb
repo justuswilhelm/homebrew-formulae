@@ -11,6 +11,6 @@ class Click < Formula
   end
 
   test do
-    system "#{bin}/click"
+    system "#{bin}/click", "--version"
   end
 end
