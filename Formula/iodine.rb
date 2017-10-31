@@ -5,7 +5,6 @@ class Iodine < Formula
   sha256 "4dceb6782926b96d543ca92c506f41de81b84eb55a28a313641b77a8b3dc56a9"
 
   def install
-    system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
 
