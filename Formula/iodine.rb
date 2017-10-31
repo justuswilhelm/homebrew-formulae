@@ -9,6 +9,6 @@ class Iodine < Formula
   end
 
   test do
-    system "iodine", "--version"
+    system "iodine", "-v"
   end
 end
