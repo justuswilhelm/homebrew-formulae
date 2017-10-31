@@ -1,7 +1,7 @@
 class Iodine < Formula
-  desc "Iodine dns tunnel"
+  desc "This is a piece of software that lets you tunnel IPv4 data through a DNS server. This can be usable in different situations where internet access is firewalled, but DNS queries are allowed."
   homepage "http://code.kryo.se/iodine"
-  url "https://github.com/yarrick/iodine/archive/05dc792d86ecada826f67b57de5a49bbe38ec874.zip"
+  url "https://github.com/yarrick/iodine/archive/05dc792d86ecada826f67b57de5a49bbe38ec874.tar.gz"
   sha256 "4dceb6782926b96d543ca92c506f41de81b84eb55a28a313641b77a8b3dc56a9"
 
   def install
@@ -9,6 +9,6 @@ class Iodine < Formula
   end
 
   test do
-    system "iodine", "-v"
+    system "#{bin}/iodine", "-v"
   end
 end
